@@ -21,7 +21,6 @@ import LoginPage from "./components/Admin/LoginPage";
 import Dashboard from "./components/Admin/Dashboard";
 import ProtectedRoute from "./components/Admin/ProtectedRoute";
 import Lenis from "lenis";
-import SplashCursor from "./components/SplashCursor";
 function Layout({ children }) {
   const location = useLocation();
   const isAdminRoute = location.pathname.startsWith("/admin");
@@ -62,7 +61,6 @@ function App() {
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Layout>
-          <SplashCursor />{" "}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/project" element={<Projects />} />

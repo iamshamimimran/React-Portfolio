@@ -6,6 +6,7 @@ import pdf from "../../Assets/../Assets/CV.pdf";
 // import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import SplashCursor from "../SplashCursor";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
@@ -18,6 +19,7 @@ function ResumeNew() {
   return (
     <div>
       <Container fluid className="resume-section">
+        <SplashCursor />
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
           {/* <Button
