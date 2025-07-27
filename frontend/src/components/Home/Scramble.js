@@ -31,7 +31,7 @@ const Component = () => {
     return () => clearInterval(interval);
   }, [names.length]); // Only depend on names.length which doesn't change
 
-  return <h1 ref={ref} />;
+  return <h1 ref={ref}>&nbsp;</h1>;
 };
 
 export default Component;
