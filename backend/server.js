@@ -18,18 +18,17 @@ connectDB();
 const app = express();
 
 // CORS setup
-// const corsOptions = {
-//   origin: [
-//     "http://localhost:3000",
-//     "https://shamimimran.vercel.app",
-//     "https://portfolio-backend-njcj.onrender.com",
-//     "https://shamimimran.vercel.app/",
-//   ],
-//   credentials: true,
-// };
-// app.use(cors(corsOptions));
-
-app.use(cors()); // Allow all origins for simplicity, adjust as needed
+const corsOptions = {
+  origin: [
+    "http://localhost:3000",
+    "https://shamimimran.vercel.app",
+    "https://portfolio-backend-njcj.onrender.com",
+    "https://shamimimran.vercel.app/",
+    "https://xeotecenergy.com/",
+  ],
+  credentials: true,
+};
+app.use(cors(corsOptions));
 
 // Middleware
 app.use(express.json());
