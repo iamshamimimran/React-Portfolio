@@ -21,6 +21,7 @@ const app = express();
 const corsOptions = {
   origin: [
     "http://localhost:3000",
+    "http://localhost:5173",
     "https://shamimimran.vercel.app",
     "https://portfolio-backend-njcj.onrender.com",
     "https://shamimimran.vercel.app/",
