@@ -7,6 +7,9 @@ import text2qr from "../../Assets/Projects/text-2-qr.png";
 import portfolio from "../../Assets/Projects/portfolio.png";
 import bgremove from "../../Assets/Projects/bg-remover.png";
 import gemini from "../../Assets/Projects/gemini-clone.png";
+import askgemini from "../../Assets/Projects/askgemini.png";
+import aismartnotes from "../../Assets/Projects/aismartnotes.png";
+import quizmaster from "../../Assets/Projects/quizmaster.png";
 import RProject from "./RProject";
 // import bitsOfCode from "../../Assets/Projects/blog.png";
 
@@ -19,7 +22,7 @@ function Projects() {
           My Recent <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          <RProject/>
+          <RProject />
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
@@ -40,7 +43,7 @@ function Projects() {
               title="Portfolio"
               description="A portfolio website is a unique way to showcase your work and let others know about yourself."
               ghLink="https://github.com/iamshamimimran/portfolio2.0"
-              demoLink="https://shamimimran.netlify.app/"              
+              demoLink="https://shamimimran.netlify.app/"
             />
           </Col>
 
@@ -60,13 +63,41 @@ function Projects() {
               imgPath={gemini}
               isBlog={false}
               title="Gemini Clone"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts ...."
+              description="A GEMINI Clone Using 'Natural Launguage Processing'"
               ghLink="https://github.com/iamshamimimran/Gemini-Clone"
               demoLink="https://gemini-clone-01.vercel.app/"
             />
           </Col>
-
-         
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={askgemini}
+              isBlog={false}
+              title="Gemini Image Question Answering"
+              description=" Ask anything about an uploaded image"
+              ghLink="https://github.com/iamshamimimran/AskGemini"
+              demoLink="https://askgemini.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={aismartnotes}
+              isBlog={false}
+              title="AI Smart Notes"
+              description="AI Smart Notes is a web application that allows users to take notes and generate summaries using AI."
+              ghLink="https://github.com/iamshamimimran/AI-SMART-NOTES-FRONTEND"
+              demoLink="https://ai-smart-notes-frontend.vercel.app/login"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={quizmaster}
+              isBlog={false}
+              title="AI Smart Quiz Master"
+              description="A maltiplayer quiz game summarizing the questions and answers using AI."
+              ghLink="https://github.com/iamshamimimran/GAME-FRONTEND"
+              demoLink="https://game-frontend-pearl.vercel.app/"
+            />
+          </Col>
         </Row>
       </Container>
     </Container>
