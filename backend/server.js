@@ -25,7 +25,7 @@ const corsOptions = {
     "https://shamimimran.vercel.app",
     "https://portfolio-backend-njcj.onrender.com",
     "https://shamimimran.vercel.app/",
-    "https://xeotecenergy.com/",
+    "https://xeotecenergy.com",
   ],
   credentials: true,
 };
