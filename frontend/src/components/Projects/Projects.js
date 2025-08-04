@@ -10,8 +10,8 @@ import gemini from "../../Assets/Projects/gemini-clone.png";
 import askgemini from "../../Assets/Projects/askgemini.png";
 import aismartnotes from "../../Assets/Projects/aismartnotes.png";
 import quizmaster from "../../Assets/Projects/quizmaster.png";
+import betterbrief from "../../Assets/Projects/betterbrief.png";
 import RProject from "./RProject";
-// import bitsOfCode from "../../Assets/Projects/blog.png";
 
 function Projects() {
   return (
@@ -96,6 +96,16 @@ function Projects() {
               description="A maltiplayer quiz game summarizing the questions and answers using AI."
               ghLink="https://github.com/iamshamimimran/GAME-FRONTEND"
               demoLink="https://game-frontend-pearl.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={betterbrief}
+              isBlog={false}
+              title="Better Brief"
+              description="Get a professional brief tailored to your industry and project needs in seconds."
+              ghLink="https://github.com/iamshamimimran/GOOD-BRIEF"
+              demoLink="https://betterbrief.vercel.app/"
             />
           </Col>
         </Row>
